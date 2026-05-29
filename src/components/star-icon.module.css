@@ -17,6 +17,7 @@
 }
 @media screen and (max-width: 675px) {
   .starIcon {
+    height: auto;
     gap: 38px;
     max-width: 100%;
   }

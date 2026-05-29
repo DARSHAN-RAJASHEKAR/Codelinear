@@ -500,3 +500,13 @@
   opacity: var(--opacity-0_6);
   min-width: 25px;
 }
+
+@media screen and (max-width: 750px) {
+  .home {
+    bottom: 20px;
+    right: 12px;
+    top: auto;
+    transform: scale(0.88);
+    transform-origin: bottom right;
+  }
+}

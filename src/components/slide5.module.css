@@ -320,7 +320,6 @@
   opacity: var(--opacity-0_7);
   max-width: 267px;
 }
-.coreDetails,
 .frameGroup {
   display: flex;
   align-items: center;
@@ -328,6 +327,9 @@
 }
 .coreDetails {
   width: var(--width-302);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: var(--gap-5);
 }
 .frameGroup {
@@ -455,5 +457,82 @@
   }
   .frameDiv {
     flex: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Unwrap frameParent — phone sections become direct flex items of s5EllipseParent */
+  .frameParent {
+    display: contents;
+  }
+
+  /* ---- Shared: all iPhones scale to 80% width, centred ---- */
+  .iphone13Pro {
+    height: auto;
+    width: 80%;
+    max-width: 280px;
+    flex: none;
+  }
+
+  /* ---- Section 1 (order 2): phone → compliance text ---- */
+  .iphone13ProParent {
+    order: 2;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+  }
+  .complianceItemsParent {
+    height: auto;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+  .complianceItems {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---- Section 2 (order 3): text → phone ---- */
+  .frameGroup {
+    order: 3;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+  }
+  .frameContainer {
+    height: auto;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+  .featureItemsParent {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---- Section 3 (order 4): phone → text — before dark card ---- */
+  .iphone13ProGroup {
+    order: 4;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+  .frameDiv {
+    height: auto;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  /* ---- Buttons in dark card: side by side, equal size ---- */
+  .contactUsWrapper,
+  .darkRequestDemoWrapper {
+    flex: 1;
+    padding: 14px 10px;
+    justify-content: center;
   }
 }

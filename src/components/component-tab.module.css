@@ -57,6 +57,23 @@
   line-height: 130%;
   opacity: var(--opacity-0_7);
 }
+@media screen and (max-width: 675px) {
+  .componentTab {
+    height: auto;
+    width: 100%;
+  }
+  .componentTab2 {
+    width: 100%;
+    padding-right: 0;
+  }
+  .samplecode {
+    width: 100%;
+    height: auto;
+  }
+  .loanOriginationSystem {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 450px) {
   .samplecode {
     gap: var(--gap-16);

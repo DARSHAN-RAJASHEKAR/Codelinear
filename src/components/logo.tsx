@@ -7,7 +7,7 @@ export type LogoType = {
   sHELLS?: string;
 
   /** Variant props */
-  name1?: CSSProperties["name"];
+  name1?: string;
 };
 
 const Logo: FunctionComponent<LogoType> = ({

@@ -9,7 +9,7 @@ export type NavType = {
   swap1?: string;
 
   /** Variant props */
-  property1?: CSSProperties["property1"];
+  property1?: string;
 
   /** Style props */
   navPosition?: CSSProperties["position"];

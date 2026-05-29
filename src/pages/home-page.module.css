@@ -1,9 +1,12 @@
 .scrollContainer {
   width: 100%;
   scroll-snap-type: y proximity;
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
   scroll-snap-align: start;
   width: 100%;
+  flex-shrink: 0;
 }

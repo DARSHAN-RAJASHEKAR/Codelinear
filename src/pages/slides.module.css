@@ -117,6 +117,36 @@
     line-height: 38px;
   }
 }
+@media screen and (max-width: 650px) {
+  .s3Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: unset;
+    padding: 60px 30px 0;
+    gap: 40px;
+  }
+  .s3FrameParent {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+    max-width: 100%;
+    width: 100%;
+    order: 1;
+  }
+  .s3RootChild {
+    position: relative;
+    top: unset;
+    right: unset;
+    transform: none;
+    width: calc(82% + 30px);
+    max-width: none;
+    margin-right: -30px;
+    align-self: flex-end;
+    order: 2;
+  }
+}
 
 /* ===== SLIDE 4 ===== */
 .s4Div {
@@ -285,15 +315,21 @@
 }
 @media screen and (max-width: 650px) {
   .s4TopSection {
-    padding: 60px var(--padding-30);
+    min-height: unset;
+    padding: 0 var(--padding-30) 60px;
+    display: flex;
+    flex-direction: column;
   }
   .s4Child {
     position: relative;
     top: unset;
     left: unset;
     transform: none;
-    width: 100%;
-    max-width: 100%;
+    width: calc(82% + 30px);
+    max-width: none;
+    margin-left: -30px;
+    align-self: flex-start;
+    order: 2;
   }
   .s4RunAMoreEfficientFlexibleParent {
     position: relative;
@@ -302,6 +338,8 @@
     transform: none;
     max-width: 100%;
     width: 100%;
+    order: 1;
+    padding: 60px 0 40px;
   }
   .s4Div2 {
     flex-wrap: wrap;
@@ -436,19 +474,20 @@
   .s4DarkCardButtons {
     width: 100%;
     justify-content: flex-start;
+    gap: 12px;
+  }
+  .s4ContactUsBtn,
+  .s4RequestDemoBtn {
+    flex: 1;
+    padding: 14px 10px;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 450px) {
   .s4DarkCardHeading {
     font-size: 28px;
-  }
-  .s4DarkCardButtons {
-    gap: 16px;
-  }
-  .s4ContactUsBtn,
-  .s4RequestDemoBtn {
-    padding: 12px 32px;
-    font-size: 13px;
   }
 }
 
@@ -778,6 +817,63 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .s5EllipseParent {
+    padding: 60px 30px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  /* Unwrap the container — its children become direct flex items of s5EllipseParent */
+  .s5OutoftheboxContainerParent {
+    display: contents;
+  }
+  /* Heading section — show first */
+  .s5OutoftheboxContainer {
+    order: 1;
+    position: relative;
+    z-index: 9;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  /* Dark card — show after all 3 phones (order 6) */
+  .s5PaperlessContentParent {
+    order: 6;
+    margin: 40px 0 60px;
+  }
+  .s5VectorIcon {
+    display: none;
+  }
+  .s5PaperlessContentParent {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 24px;
+  }
+  .s5N72 {
+    display: none;
+  }
+  .s5TakeTheFull {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .s5N7HelpsYour2 {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .s5InstanceParent {
+    position: relative !important;
+    top: unset !important;
+    right: unset !important;
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    z-index: 3;
+  }
+}
+
 /* ===== SLIDE 6 ===== */
 .s6Root {
   /* Scope slide-6's conflicting color variables locally so other slides are unaffected */
@@ -992,7 +1088,22 @@
     max-width: 100%;
   }
   .s6CombinedArticles {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .s6ArticlesContainer {
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .s6ArticleDuplicates {
+    height: auto;
+    width: 100%;
+    padding: 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1237,10 +1348,60 @@
   }
   .s7DetailsWrapper {
     max-width: 100%;
+    width: 100%;
+    padding: 24px 16px;
+  }
+  .s7Frame110Row1 {
+    justify-content: center;
+  }
+  .s7Frame110Row12 {
+    justify-content: center;
   }
   .s7Frame110Row13 {
     gap: 0;
     max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+  .s7QunMtKhu2 {
+    height: auto;
+  }
+  .s7CaseStudiesCarouselGrid1 {
+    display: none;
+  }
+  .s7DetailsContainer {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 20px 16px;
+  }
+  /* Force 2×2 grid: 2 icons × 90px + 1 gap × 16px = 196px max width */
+  .s7VectorParent {
+    height: auto;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 196px;
+  }
+  .s7VectorIcon {
+    height: 90px;
+    width: 90px;
+    flex-shrink: 0;
+  }
+  /* Text + button section */
+  .s7DetailsContent {
+    gap: 24px;
+    min-width: unset;
+    width: 100%;
+  }
+  .s7HowWeHelp {
+    width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1292,7 +1453,8 @@
 }
 .slide8Heading {
   margin: 0;
-  width: 607.8px;
+  max-width: 607.8px;
+  width: 100%;
   font-size: inherit;
   letter-spacing: -0.01em;
   line-height: 120%;
@@ -1300,7 +1462,8 @@
   font-family: inherit;
 }
 .slide8Desc {
-  width: 462.9px;
+  max-width: 462.9px;
+  width: 100%;
   font-size: 16px;
   line-height: 130%;
   opacity: 0.7;
@@ -1350,6 +1513,11 @@
   }
   .slide8ContactRequest {
     min-width: 100%;
+    padding-top: 24px;
+  }
+  .slide8Buttons {
+    justify-content: flex-start;
+    gap: 12px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1410,6 +1578,28 @@
   display: inline-block;
   opacity: 0.3;
   z-index: 1;
+}
+.slide9Credits {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 130%;
+  opacity: 0.6;
+  z-index: 1;
+  color: var(--white);
+  font-family: var(--font-archivo);
+}
+.slide9Credits a {
+  color: var(--blue);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.slide9Credits a:hover {
+  opacity: 1;
 }
 .slide9FrameParent,
 .slide9MaskGroupIcon {
@@ -1607,6 +1797,31 @@
     max-width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .slide9Root {
+    padding: 60px 20px;
+  }
+  .slide9Copyright {
+    position: relative !important;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    order: 10;
+    margin: 0 !important;
+  }
+  .slide9Credits {
+    position: relative;
+    left: auto;
+    transform: none;
+    bottom: auto;
+    width: 100%;
+    order: 11;
+    margin: 8px 0 0;
+    text-align: center;
+    white-space: normal;
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 450px) {
   .slide9MaskGroupIcon {
     max-width: 100%;
@@ -1615,9 +1830,20 @@
     gap: 17px;
   }
   .slide9FrameGroup {
+    height: auto;
     gap: 64px;
   }
   .slide9FrameDiv {
+    height: auto;
     gap: 53px;
+  }
+  .slide9FrameParent3 {
+    height: auto;
+  }
+  .slide9LondonParent,
+  .slide9LondonGroup,
+  .slide9DubaiParent {
+    width: 100%;
+    height: auto;
   }
 }

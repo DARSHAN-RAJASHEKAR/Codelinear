@@ -411,6 +411,14 @@ export const Slide9: FunctionComponent = () => {
         Commercial Brand] — [Registered under the Companies Act 2006 in England
         and Wales | Number of Incorporation 13100992]
       </div>
+      <div className={styles.slide9Credits}>
+        Built with{" "}
+        <a href="https://www.locofy.ai" target="_blank" rel="noopener noreferrer">Locofy.ai</a>
+        {" · "}
+        <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude.ai</a>
+        {" · "}
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel.com</a>
+      </div>
       <img
         className={styles.slide9MaskGroupIcon}
         loading="lazy"

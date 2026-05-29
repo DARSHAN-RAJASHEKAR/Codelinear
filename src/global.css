@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   line-height: normal;
+  background-color: #000d12;
 }
 :root {
   /* Common Style Variables */
