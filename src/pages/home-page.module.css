@@ -1,0 +1,9 @@
+.scrollContainer {
+  width: 100%;
+  scroll-snap-type: y proximity;
+}
+
+.section {
+  scroll-snap-align: start;
+  width: 100%;
+}

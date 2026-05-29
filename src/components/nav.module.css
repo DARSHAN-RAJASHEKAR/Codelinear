@@ -1,0 +1,162 @@
+.nav {
+  position: absolute;
+  top: 298.82px;
+  left: -6.9px;
+  width: 267.5px;
+  height: 54.9px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--fs-9_6);
+  color: var(--shape);
+  font-family: var(--font-gilroy-medium);
+}
+.navChild,
+.navItem {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: -0.04%;
+  backdrop-filter: blur(54.9px);
+}
+.navChild {
+  width: 20.52%;
+  right: 79.51%;
+  border-radius: var(--br-50);
+  background: var(--gradient-2);
+}
+.navItem {
+  width: 100%;
+  right: 0.04%;
+  border-radius: var(--br-20_58) var(--br-20_58) var(--br-0) var(--br-0);
+  background-color: var(--color-gainsboro);
+  opacity: var(--opacity-0_8);
+}
+.homeButton1Icon,
+.navItems {
+  position: absolute;
+  height: 69.03%;
+  width: 10.09%;
+  top: 16.21%;
+  right: 83.78%;
+  bottom: 14.75%;
+  left: 6.13%;
+}
+.homeButton1Icon {
+  height: 43.54%;
+  width: 61.11%;
+  top: 0;
+  right: 21.11%;
+  bottom: 56.46%;
+  left: 17.78%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.home {
+  position: absolute;
+  top: 57.78%;
+  left: 0;
+  line-height: var(--lh-15_1);
+  display: inline-block;
+  min-width: var(--min-w-27);
+}
+.navItems2 {
+  position: absolute;
+  height: 69.03%;
+  width: 8.6%;
+  top: 16.21%;
+  right: 62.21%;
+  bottom: 14.75%;
+  left: 29.2%;
+}
+.card {
+  position: absolute;
+  top: 57.78%;
+  left: 0;
+  line-height: var(--lh-15_1);
+  display: inline-block;
+  min-width: var(--min-w-23);
+}
+.creditCard11Icon {
+  position: absolute;
+  height: 43.54%;
+  width: 71.74%;
+  top: 0;
+  right: 13.48%;
+  bottom: 56.46%;
+  left: 14.78%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.navItems3 {
+  position: absolute;
+  height: 69.03%;
+  width: 10.09%;
+  top: 16.21%;
+  right: 6.36%;
+  bottom: 14.75%;
+  left: 83.55%;
+}
+.profile {
+  position: absolute;
+  top: 57.78%;
+  left: 0;
+  line-height: var(--lh-15_1);
+  display: inline-block;
+  min-width: var(--min-w-27);
+}
+.user11Icon {
+  position: absolute;
+  height: 43.54%;
+  width: 61.11%;
+  top: 0;
+  right: 18.52%;
+  bottom: 56.46%;
+  left: 20.37%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.navItems4 {
+  position: absolute;
+  height: 69.03%;
+  width: 19.44%;
+  top: 16.21%;
+  right: 29.57%;
+  bottom: 14.75%;
+  left: 50.99%;
+}
+.transaction {
+  position: absolute;
+  top: 57.78%;
+  left: 0;
+  line-height: var(--lh-15_1);
+  display: inline-block;
+  min-width: var(--min-w-52);
+}
+.navInner,
+.swap1Icon {
+  position: absolute;
+  top: 0;
+}
+.swap1Icon {
+  height: 43.54%;
+  width: 31.73%;
+  right: 35.38%;
+  bottom: 56.46%;
+  left: 32.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.navInner {
+  height: 1.82%;
+  width: 9.5%;
+  right: 84.11%;
+  bottom: 98.18%;
+  left: 6.39%;
+  border-radius: var(--br-16_5);
+  background-color: var(--color-midnightblue);
+}

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono+Medium:ital,wght@0,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilroy-Bold:ital,wght@0,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilroy-Medium:ital,wght@0,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilroy-Regular:ital,wght@0,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* Common Style Variables */
+  --color-white: #fff;
+  --color-aliceblue: rgba(233, 244, 249, 0);
+
+  /* Color */
+  --black: #000d12;
+  --blue: #00b4fd;
+  --color-gainsboro: #e7e7e7;
+  --color-gray-100: #1d1d1d;
+  --color-gray-200: #0f0f0f;
+  --color-aliceblue-100: rgba(233, 244, 249, 0.5);
+  --color-skyblue: #64a8c4;
+  --color-steelblue: #2490bb;
+  --color-gray-300: #0b0b0b;
+  --color-gray-400: rgba(255, 255, 255, 0.7);
+  --color-gray-500: rgba(255, 255, 255, 0.4);
+  --color-midnightblue: #081e69;
+  --color-slategray: #586e84;
+  --color-snow: rgba(255, 250, 250, 0.2);
+  --color-whitesmoke: #f8f8f8;
+  --Gray-100: #0d0d0c;
+  --shape: #1b1b1b;
+  --white: #e9f4f9;
+  --White: #fff;
+
+  /* Gap */
+  --gap-0: 0px;
+  --gap-2: 2px;
+  --gap-3: 3px;
+  --gap-4: 4px;
+  --gap-5: 5px;
+  --gap-10: 10px;
+  --gap-11: 11px;
+  --gap-12: 12px;
+  --gap-14: 14px;
+  --gap-16: 16px;
+  --gap-19: 19px;
+  --gap-20: 20px;
+  --gap-24: 24px;
+  --gap-26: 26px;
+  --gap-32: 32px;
+  --gap-43: 43px;
+  --gap-80: 80px;
+  --gap-1_7: 1.7px;
+  --gap-4_3: 4.3px;
+  --gap-4_6: 4.6px;
+  --gap-5_5: 5.5px;
+  --gap-7_9: 7.9px;
+  --gap-8_5: 8.5px;
+  --gap-9_1: 9.1px;
+
+  /* Padding */
+  --padding-0: 0px;
+  --padding-01: 0;
+  --padding-1: 1px;
+  --padding-2: 2px;
+  --padding-3: 3px;
+  --padding-4: 4px;
+  --padding-5: 5px;
+  --padding-6: 6px;
+  --padding-7: 7px;
+  --padding-10: 10px;
+  --padding-11: 11px;
+  --padding-12: 12px;
+  --padding-13: 13px;
+  --padding-15: 15px;
+  --padding-24: 24px;
+  --padding-26: 26px;
+  --padding-30: 30px;
+  --padding-32: 32px;
+  --padding-20: 20px;
+  --padding-40: 40px;
+  --padding-80: 80px;
+  --padding-100: 100px;
+  --padding-1_1: 1.1px;
+  --padding-1_3: 1.3px;
+
+  /* BorderRadius */
+  --br-0: 0px;
+  --br-10: 10px;
+  --br-11: 11px;
+  --br-18: 18px;
+  --br-12: 12px;
+  --br-50: 50%;
+  --br-10_1: 10.1px;
+  --br-16_5: 16.5px;
+  --br-20_58: 20.58px;
+  --br-8_6: 8.6px;
+
+  /* Font */
+  --font-archivo: Archivo;
+  --font-chivo-mono-medium: Chivo Mono Medium;
+  --font-gilroy-bold: Gilroy-Bold;
+  --font-gilroy-medium: Gilroy-Medium;
+  --font-gilroy-regular: Gilroy-Regular;
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+
+  /* FontSize */
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-19: 19px;
+  --fs-27: 27px;
+  --fs-32: 32px;
+  --fs-47: 47px;
+  --fs-15: 15px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-22: 22px;
+  --fs-26: 26px;
+  --fs-10_1: 10.1px;
+  --fs-13_8: 13.8px;
+  --fs-6_5: 6.5px;
+  --fs-7_5: 7.5px;
+  --fs-7_6: 7.6px;
+  --fs-8_6: 8.6px;
+  --fs-9_6: 9.6px;
+
+  /* Borders */
+  --border-1: 0.5px solid var(--Gray-100);
+  --border-2: 0.6px solid var(--Gray-100);
+  --border-3: 1px solid var(--blue);
+
+  /* Shadows */
+  --shadow-drop: 0px 0px 27.6px 8.92px rgba(0, 0, 0, 0.25);
+
+  /* Gradients */
+  --sky: linear-gradient(106.53deg, #00b4fd, #003ace);
+  --gradient-border: linear-gradient(108.43deg, #00b4fd, #003ace);
+  --gradient-1: linear-gradient(103.43deg, var(--blue), #003ace);
+  --gradient-2: linear-gradient(106.53deg, var(--blue), #003ace);
+  --gradient-3: radial-gradient(
+    45.63% 45.63% at 50% 50%,
+    rgba(182, 239, 17, 0),
+    rgba(182, 239, 17, 0)
+  );
+
+  /* WidthHeights */
+  --height-1: 1px;
+  --height-16: 16px;
+  --height-18: 18px;
+  --height-21: 21px;
+  --height-30: 30px;
+  --height-121_2: 121.2px;
+  --height-49: 49px;
+  --height-205: 205px;
+  --height-327: 327px;
+  --height-0_5: 0.5px;
+  --height-0_6: 0.6px;
+  --height-13_2: 13.2px;
+  --height-14_5: 14.5px;
+  --height-15_5: 15.5px;
+  --height-18_4: 18.4px;
+  --height-2_2: 2.2px;
+  --height-25_8: 25.8px;
+  --height-30_3: 30.3px;
+  --height-32_3: 32.3px;
+  --height-41_2: 41.2px;
+  --height-48_6: 48.6px;
+  --height-62_7: 62.7px;
+  --max-w-359_8: 359.8px;
+  --min-w-18: 18px;
+  --min-w-268: 268px;
+  --min-w-19: 19px;
+  --min-w-21: 21px;
+  --min-w-22: 22px;
+  --min-w-23: 23px;
+  --min-w-24: 24px;
+  --min-w-26: 26px;
+  --min-w-27: 27px;
+  --min-w-28: 28px;
+  --min-w-30: 30px;
+  --min-w-36: 36px;
+  --min-w-40: 40px;
+  --min-w-48: 48px;
+  --min-w-52: 52px;
+  --width-47: 47px;
+  --width-13_6: 13.6px;
+  --width-136_5: 136.5px;
+  --width-164_1: 164.1px;
+  --width-2_2: 2.2px;
+  --width-25_8: 25.8px;
+  --width-263_7: 263.7px;
+  --width-268_5: 268.5px;
+  --width-30: 30px;
+  --width-121: 121px;
+  --width-58: 58px;
+  --width-93_1: 93.1px;
+  --width-268_3: 268.3px;
+  --width-268_4: 268.4px;
+  --width-269: 269px;
+  --width-302: 302px;
+  --width-303_4: 303.4px;
+  --width-30_3: 30.3px;
+  --width-32_3: 32.3px;
+  --width-33_6: 33.6px;
+  --width-41_2: 41.2px;
+  --width-449_1: 449.1px;
+
+  --height-31_4: 31.4px;
+  --height-58: 58px;
+  --height-66: 66px;
+  --height-542_9: 542.9px;
+
+  /* LineHeights */
+  --lh-21: 21px;
+  --lh-26: 26px;
+  --lh-28: 28px;
+  --lh-10_8: 10.8px;
+  --lh-11_8: 11.8px;
+  --lh-12_6: 12.6px;
+  --lh-12_9: 12.9px;
+  --lh-15_1: 15.1px;
+  --lh-15_2: 15.2px;
+  --lh-16_5: 16.5px;
+
+  /* Opacities */
+  --opacity-0_6: 0.6;
+  --opacity-0_7: 0.7;
+  --opacity-0_8: 0.8;
+  --opacity-0_9: 0.9;
+}
