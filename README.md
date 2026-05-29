@@ -1,10 +1,37 @@
+# N7 Banking — Landing Page
 
-  # project
+Marketing landing page for **N7** (Digital Banking) and **CB7** (Core Banking) by Linktia Infosystems.
 
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code> with a minimum version of 20.
+## Tech Stack
 
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
-  
+- **React** + **TypeScript**
+- **Vite** (build tool)
+- **CSS Modules**
+
+## Getting Started
+
+```bash
+npm install
+npm start        # dev server → http://localhost:5555
+```
+
+## Build & Deploy
+
+```bash
+npm run build    # outputs to /build
+```
+
+Deployed on **Vercel** — push to `main` to trigger a deployment.
+
+## Project Structure
+
+```
+src/
+├── components/   # Reusable UI components (navbar, cards, buttons)
+├── pages/        # Page-level slide layouts
+└── global.css    # CSS variables and global styles
+```
+
+## Credits
+
+Built with [Locofy.ai](https://www.locofy.ai) · [Claude.ai](https://claude.ai) · [Vercel](https://vercel.com)
